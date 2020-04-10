@@ -1,0 +1,185 @@
+I"Q
+<style>
+.tag-box{
+    list-style:none;
+    margin: 1rem 0;
+    padding:4px 0;
+    overflow:hidden;*zoom:1}
+.tag-box.inline li{
+    float:left;
+    font-size:0.875rem;
+    line-height:1.75}
+.tag-box a{
+    padding:4px 6px;
+    margin:2px;
+    background-color:#e6e6e6;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    text-decoration:none}
+.tag-box a span{
+    vertical-align:super;
+    font-size:0.625rem}
+</style>
+
+<ul class="tag-box inline">
+  
+
+    
+
+    <li>
+      <a href="#movies" class="tag">movies
+        <span>(1)</span>
+      </a>
+    </li>
+
+  
+
+    
+
+    <li>
+      <a href="#personal" class="tag">personal
+        <span>(1)</span>
+      </a>
+    </li>
+
+  
+
+    
+
+    <li>
+      <a href="#roma" class="tag">roma
+        <span>(1)</span>
+      </a>
+    </li>
+
+  
+
+    
+
+    <li>
+      <a href="#thoughts" class="tag">thoughts
+        <span>(1)</span>
+      </a>
+    </li>
+
+  
+
+    
+
+    <li>
+      <a href="#womanhood%3F" class="tag">womanhood?
+        <span>(1)</span>
+      </a>
+    </li>
+
+  
+</ul>
+
+<hr />
+
+<div>
+  
+
+    
+
+    <h3 id="movies">movies</h3>
+
+    
+
+      <div>
+        <span style="float: left;">
+          <a href="/2020/04/09/roma.html">We are alone</a>
+        </span>
+        <span style="float: right;">
+          09 Apr 2020
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+
+    
+
+  
+
+    
+
+    <h3 id="personal">personal</h3>
+
+    
+
+      <div>
+        <span style="float: left;">
+          <a href="/2020/07/09/the-future.html">The future, question mark</a>
+        </span>
+        <span style="float: right;">
+          09 Jul 2020
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+
+    
+
+  
+
+    
+
+    <h3 id="roma">roma</h3>
+
+    
+
+      <div>
+        <span style="float: left;">
+          <a href="/2020/04/09/roma.html">We are alone</a>
+        </span>
+        <span style="float: right;">
+          09 Apr 2020
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+
+    
+
+  
+
+    
+
+    <h3 id="thoughts">thoughts</h3>
+
+    
+
+      <div>
+        <span style="float: left;">
+          <a href="/2020/05/19/safe.html">Safety?</a>
+        </span>
+        <span style="float: right;">
+          19 May 2020
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+
+    
+
+  
+
+    
+
+    <h3 id="womanhood%3F">womanhood?</h3>
+
+    
+
+      <div>
+        <span style="float: left;">
+          <a href="/2020/05/19/safe.html">Safety?</a>
+        </span>
+        <span style="float: right;">
+          19 May 2020
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+
+    
+
+  
+</div>
+<p><br /></p>
+:ET

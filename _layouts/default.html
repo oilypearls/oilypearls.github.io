@@ -1,20 +1,50 @@
-<!doctype html>
-<html>
 
-{% include head.html %}
+{%- assign pagnum = 10 -%}
+{%- include head.html -%}
 
-<body>
+<div class="container">
 
-  <div class="container">
-    {% include header.html %}
+    {%- if site.posts.size == 0 -%}
+        <h2>No post found</h2>
+    {% endif %}
 
-    <div class="post-container">
-      {{ content }}
-    </div>
+    {% comment %}
+        'pagin == false': index.html
+    {% endcomment %}
+    {% if page.pagin == false %}
 
-    {% include footer.html %}
+        <header class="header">
+            <h1 class="header-title">
+                <a href="{{ site.url }}/">{{ site.name }}</a>
+            </h1>
+            <nav class="header-nav">
+                {% for nav in site.nav %}
+                <a href="{{ site.url }}{{ nav.href }}">{{ nav.name }}</a>
+                {% endfor %}
+            </nav>
+        </header>
 
-  </div>
+    {% endif %}
 
-</body>
-</html>
+    {% comment %}
+        If true: 'archive', else 'index' 
+    {% endcomment %}
+    {%- if page.pagin -%}
+
+        {%- include top_small.html -%}
+        {%- include arch_css.html -%}
+
+        {%- for post in site.posts offset: pagnum %}
+            {% include loop.html %}
+        {%- endfor -%}
+
+    {%- else -%}
+
+        {%- for post in site.posts limit: pagnum -%}
+            {%- include loop.html -%}
+        {%- endfor -%}
+
+    {%- endif -%}
+</div>
+
+{%- include foot.html -%}

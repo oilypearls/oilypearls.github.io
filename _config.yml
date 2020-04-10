@@ -1,29 +1,57 @@
-# Site Build Settings
+# # # # # # # # # #
+#  K i k o f r i  #
+# # # # # # # # # #
 
-# Jekyll-paginate-v2 configuration
-#  pagination:
-#   enabled: true
-#   per_page: 5
-#   permalink: '/page/:num/'
-#   title: ':title - page :num of :max'
-#   limit: 0
-#   sort_field: 'date'
-#   sort_reverse: true
+# # # # #
+# Used as meta-data for 'head.html' among 
+# other things.
+#
+# Basic, either your jekyll site's name or
+# an organization.
+name: "A muse, amuse"
+description: "I'm always amused and amusing you"
 
-# jekyll-paginate configuration
-paginate:            5
+# This should be a person of some sort.
+author: "AE"
 
-# Build settings
-markdown:            kramdown
-highlighter:         rouge
-permalink:           none
-plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
+# Would make sense to use the 'name:' above
+# here. This is an alternative title.
+title: "A muse, amuse"
 
-# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           'A muse, amuse'
-description:	       'I'm always amused and amusing you'
-author:              'EA'
+# 'en_US' is the default language. Enter a
+# new default language here. Making 'en_US'
+# an alternative language. See 'head.html'
+lang:
 
-# RSS 2.0 can be used instead of Atom by uncommenting following two lines
-#feed:
-#  path: rss-feed.xml
+# Default post and page image if it's those
+# are unspecified.
+
+# I just set this to whatever the above
+# image value is.
+# Could be some other image though.
+logo:
+#
+# # # # #
+
+# URL-stuff, don't forget the 'http...'-part
+url: "https://amusinghouse.com"
+#baseurl: ""
+permalink: /:year/:month/:day/:title.html
+
+# Markdown
+markdown: kramdown
+
+# Navigation
+nav:
+ - name: "about"
+   href: "/about"
+
+ - name: "tags"
+   href: "/tags"
+
+ - name: "feed"
+   href: "/feed.xml"
+
+exclude:
+  - vendor
+  - .jekyll-cache
